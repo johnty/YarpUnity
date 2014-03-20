@@ -27,9 +27,9 @@ public class myScript : MonoBehaviour {
 			gameObject.renderer.material.color = Color.cyan;
 			Bottle bot = p.read();
 			if (bot.size() == 3) {
-				int r = bot.get (0).asInt();
-				int g = bot.get (1).asInt();
-				int b = bot.get (2).asInt();
+				float r = (float) ( (float)bot.get (0).asInt() / 255.0 );
+				float g = (float) ( (float)bot.get (1).asInt() / 255.0 );
+				float b = (float) ( (float)bot.get (2).asInt() / 255.0 );
 				gameObject.renderer.material.color= new Color(r, g, b);
 			}
 			if (bot.size () == 1) {
