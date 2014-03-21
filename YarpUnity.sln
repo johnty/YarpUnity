@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{41263CF2-EEE0-CCDE-EC89-B6FD76655115}") = "YarpUnity", "Assembly-CSharp.csproj", "{2E019EC8-BFEA-F0D6-9CDF-A9CE4E198B11}"
 EndProject
+Project("{41263CF2-EEE0-CCDE-EC89-B6FD76655115}") = "YarpUnity", "Assembly-UnityScript.unityproj", "{27414849-43E5-1C4D-4FE9-B96607E8BF99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,11 +15,15 @@ Global
 		{2E019EC8-BFEA-F0D6-9CDF-A9CE4E198B11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E019EC8-BFEA-F0D6-9CDF-A9CE4E198B11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E019EC8-BFEA-F0D6-9CDF-A9CE4E198B11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27414849-43E5-1C4D-4FE9-B96607E8BF99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27414849-43E5-1C4D-4FE9-B96607E8BF99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27414849-43E5-1C4D-4FE9-B96607E8BF99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27414849-43E5-1C4D-4FE9-B96607E8BF99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
+																		GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
@@ -35,4 +41,5 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
+
 EndGlobal

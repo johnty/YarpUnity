@@ -4,6 +4,7 @@ using System.Collections;
 public class myScript : MonoBehaviour {
 
 	BufferedPortBottle p;
+	public static float globalRed, globalGreen, globalBlue;
 	// Use this for initialization
 	void Start () {
 		Network.init();
@@ -27,10 +28,13 @@ public class myScript : MonoBehaviour {
 			gameObject.renderer.material.color = Color.cyan;
 			Bottle bot = p.read();
 			if (bot.size() == 3) {
-				float r = (float) ( (float)bot.get (0).asInt() / 255.0 );
-				float g = (float) ( (float)bot.get (1).asInt() / 255.0 );
-				float b = (float) ( (float)bot.get (2).asInt() / 255.0 );
+				float r = (float)bot.get (0).asDouble();
+				float g = (float)bot.get (1).asDouble();
+				float b = (float)bot.get (2).asDouble();
 				gameObject.renderer.material.color= new Color(r, g, b);
+				globalRed = r;
+				globalGreen = g;
+				globalBlue = b;
 			}
 			if (bot.size () == 1) {
 				transform.Translate(0, 5, 0);
